@@ -27,6 +27,8 @@ Only sub folders in `use` calls.
 Only one level of `use` calls.
 Return only at end of function.
 
+Automatic formatter.
+
 main
 ```
 use
