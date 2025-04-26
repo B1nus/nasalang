@@ -21,16 +21,3 @@ How my language interpretes these requirements:
 8. No preprocessor. `use` keyword to include files.
 9. Error on more than one level of reference. No function pointers.
 10. All warnings are errors. And all errors stop compilation.
-
-`
-use
-  ./hello.na
-
-main
-  args array 100 u8
-u32
-  output
-    args
-
-  
-`
