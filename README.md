@@ -29,6 +29,12 @@ Return only at end of function.
 
 Automatic formatter.
 
+Binding `identifier type newline/dedentation`
+Assignment `identifier = expression newline/dedentation` or `identifier, identifier, ... = identifier indent (expression newline)* dedentation`
+
+Operators:
+``` add sub mul div rem and or xor clz ctz popcnt eqz eq ne lt gt le ge shl shr rotl rotr abs neq sqrt ceil floor trunc nearest min max copysign ```
+
 main
 ```
 use
