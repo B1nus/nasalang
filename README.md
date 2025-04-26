@@ -15,8 +15,14 @@ No empty function bodies.
 
 No comments.
 
-Automatic formatter which uses the ast. <- great way to test the ast as well
+Automatic formatter which uses the ast. <- great way to test the ast
   Note: Ideally the formatter shouldn't be necessary. There should only be one way to write something which compiles.
+Formatting:
+indentation = two spaces
+empty line between functions
+no newline between statements
+locals at the top of a function
+one space between each token
 
 Operators: `add sub mul div rem and or xor clz ctz popcnt eqz eq ne lt gt le ge shl shr rotl rotr abs neq sqrt ceil floor trunc nearest min max copysign extend wrap trunc demote promote convert reinterpret`
 
@@ -49,7 +55,6 @@ func main
 result s32
   index u32
   list_ptr u32
-
   index = find
     args_ptr
     args_len
