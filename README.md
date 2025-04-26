@@ -43,10 +43,14 @@ result s32
     args_ptr
     args_len
     0
-  list = array
+  list_ptr = array
+    index
+  memory_copy
+    list_ptr
+    args_ptr
     index
   output
-    args_ptr
+    list_ptr
     index
 ```
 utils
