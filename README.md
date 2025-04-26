@@ -18,7 +18,7 @@ No comments.
 Automatic formatter which uses the ast. <- great way to test the ast as well
   Note: Ideally the formatter shouldn't be necessary. There should only be one way to write something which compiles.
 
-Operators: `add sub mul div rem and or xor clz ctz popcnt eqz eq ne lt gt le ge shl shr rotl rotr abs neq sqrt ceil floor trunc nearest min max copysign reinterpret`
+Operators: `add sub mul div rem and or xor clz ctz popcnt eqz eq ne lt gt le ge shl shr rotl rotr abs neq sqrt ceil floor trunc nearest min max copysign extend wrap trunc demote promote convert reinterpret`
 
 Builtins: `load_u8 load_u16 load_u32 load_u64 load_s8 load_s16 load_s32 load_s64 load_f32 load_f64 load_bool store_u8 store_u16 store_u32 store_u64 store_s8 store_s16 store_s32 store_s64 store_f32 store_f64 store_bool memory_copy memory_fill allocate`
 
