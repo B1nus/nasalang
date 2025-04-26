@@ -1,5 +1,5 @@
 # nasalang
-My attempt at enforcing [Nasa's power of 10](https://code.with-madrid.com/en/latest/nasa10.html) in a language.
+My attempt at enforcing [Nasa's power of 10](https://code.with-madrid.com/en/latest/nasa10.html) in a language. It's a simpler language to let me go from idea to prototype quickly.
 
 No recursive `use` calls.
 Only sub folders in `use` calls.
