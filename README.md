@@ -19,11 +19,12 @@ How my language interpretes these requirements:
 6. No global scope. Error if the scope is unnecessarily large. Functions can only use their parameters.
 7. `ignore` keyword to ignore return values.
 8. No preprocessor. `use` keyword to include files.
-9. Error on more than one level of reference. No function pointers.
+9. No pointers, no function pointers.
 10. All warnings are errors. And all errors stop compilation.
 
 No recursive `use` calls.
 Only sub folders in `use` calls.
+Only one level of `use` calls.
 Return only at end of function.
 
 main
