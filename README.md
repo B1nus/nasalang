@@ -11,9 +11,9 @@ Nasa power of 10:
 10. All warnings should be address before releasing.
 
 How my language interpretes these requirements:
-1. No `goto` and no [recursion](https://softwareengineering.stackexchange.com/a/441475).
+1. No `goto` and no recursion. You can only call functions previously defined.
 2. One `repeat` keyword which takes a positive integer argument.
-3. Only arrays. `array 100 u8`
+3. No dynamic allocation.
 4. Error on functions longer than 60 lines.
 5. Error on less than two assertions per function on avarage.
 6. No global scope. Error if the scope is unnecessarily large. Functions can only use their parameters.
@@ -21,3 +21,52 @@ How my language interpretes these requirements:
 8. No preprocessor. `use` keyword to include files.
 9. Error on more than one level of reference. No function pointers.
 10. All warnings are errors. And all errors stop compilation.
+
+No recursive `use` calls.
+Only sub folders in `use` calls.
+Return only at end of function.
+
+main
+```
+use
+  utils
+  math
+
+func main
+  args_ptr u32
+  args_len u32
+result s32
+  index = find
+    args_ptr
+    args_len
+    0
+  list = array
+    index
+  output
+    args_ptr
+    index
+```
+utils
+```
+func find
+  ptr u32
+  len u32
+  byte u8
+result u32
+  index u32 = 0
+  repeat len
+    if load_u8(index + ptr) == byte
+      break
+    index = index + 1
+  return index
+
+func join
+  ptr u32
+  len u32
+  other_ptr u32
+  other_len u32
+result u32 u32
+  return
+    0
+    0
+```
